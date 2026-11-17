@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta name="description" content="GURmeBrand TV — каверы Игоря Гурмана: хиты 80-х и 90-х, видео и заказ песни или поздравления.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://sdk.minepi.com; style-src 'self' 'unsafe-inline'; connect-src 'self' https://socialchain.app https://backend.appstudio-u7cm9zhmha0ruwv8.piappengine.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com; img-src 'self' data: https:">
+  <title>GURmeBrand TV — Игорь Гурман</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://sdk.minepi.com/pi-sdk.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <img class="logo" src="logo.svg" width="88" height="88" alt="Золотой микрофон GURmeBrand TV">
+      <h1>GURmeBrand TV</h1>
+      <p class="tagline">Каверы Игоря Гурмана: хиты 80-х и 90-х</p>
+      <div class="pi-bar">
+        <button type="button" class="btn" id="pi-login" disabled>Войти через Pi</button>
+        <p class="note" id="pi-note" hidden></p>
+        <p class="status" id="pi-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="intro">Я Игорь Гурман. Пою каверы на хиты 1980-х и 1990-х годов и создаю клипы со своим голосом. Мои выступления можно посмотреть на YouTube и в StarMaker под именем IGurman.</p>
+
+    <section id="videos" aria-labelledby="videos-title">
+      <h2 id="videos-title">Песни Игоря Гурмана</h2>
+      <p class="lead">Видео с канала GURmeBrand™TV. Нажмите, чтобы смотреть на YouTube.</p>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/CJmWYOl02Ps"
+          title="Здесь вам не равнина — Игорь Гурман"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+      <ul class="video-list">
+        <li>
+          <a href="https://www.youtube.com/shorts/CJmWYOl02Ps" rel="noopener noreferrer" target="_blank">
+            <img src="https://i.ytimg.com/vi/CJmWYOl02Ps/hqdefault.jpg" alt="" width="128" height="72">
+            <span>Здесь вам не равнина</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/shorts/wSqwbzACpOM" rel="noopener noreferrer" target="_blank">
+            <img src="https://i.ytimg.com/vi/wSqwbzACpOM/hqdefault.jpg" alt="" width="128" height="72">
+            <span>Музыка нас связала</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/shorts/cpOrlorcsBg" rel="noopener noreferrer" target="_blank">
+            <img src="https://i.ytimg.com/vi/cpOrlorcsBg/hqdefault.jpg" alt="" width="128" height="72">
+            <span>Ты или нет</span>
+          </a>
+        </li>
+      </ul>
+      <div class="center-actions">
+        <a class="btn btn-outline" href="https://www.youtube.com/@gurmebrandtmtv5792" rel="noopener noreferrer" target="_blank">Открыть канал на YouTube</a>
+      </div>
+    </section>
+
+    <section id="starmaker" aria-labelledby="starmaker-title">
+      <h2 id="starmaker-title">Мои популярные песни</h2>
+      <p class="lead">Плейлист исполнителя в StarMaker. Публичной ссылки на плейлист в наших документах нет, поэтому здесь указано только имя профиля.</p>
+      <p class="name-chip">IGurman</p>
+      <p class="lead tight">Откройте приложение StarMaker и найдите исполнителя IGurman.</p>
+    </section>
+
+    <section id="order" aria-labelledby="order-title">
+      <h2 id="order-title">Заказать песню или поздравление</h2>
+      <div class="center-actions">
+        <a class="btn btn-gold" href="https://t.me/IgorGurmansongsbot" rel="noopener noreferrer" target="_blank">Заказать песню или поздравление</a>
+      </div>
+      <p class="order-note">Напишите название песни, повод и желаемую дату. Возможность исполнения, срок и стоимость согласуются отдельно. Нажатие кнопки не означает оплату.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Подвал">
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <a href="mailto:tuguchevigigorig@gmail.com">tuguchevigigorig@gmail.com</a>
+    </nav>
+    <p>Игорь Гурман, Израиль. GURmeBrand TV не является продуктом YouTube, StarMaker, Telegram или Pi.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
